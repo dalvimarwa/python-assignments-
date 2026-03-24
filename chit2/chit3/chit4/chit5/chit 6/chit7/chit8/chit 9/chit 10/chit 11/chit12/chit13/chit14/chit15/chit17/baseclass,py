@@ -1,0 +1,29 @@
+# Base class
+class Animal:
+    def sound(self):
+        print("Some generic sound")
+
+# Derived class Dog
+class Dog(Animal):
+    def sound(self):
+        print("Woof! Woof!")
+
+# Derived class Cat
+class Cat(Animal):
+    def sound(self):
+        print("Meow! Meow!")
+
+# Create objects
+animal = Animal()
+dog = Dog()
+cat = Cat()
+
+# Demonstrate method overriding
+print("Animal sound:")
+animal.sound()
+
+print("\nDog sound:")
+dog.sound()
+
+print("\nCat sound:")
+cat.sound()
